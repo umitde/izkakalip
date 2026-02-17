@@ -18,36 +18,32 @@
                     },
                     colors: {
                         izka: {
-                            dark: '#0f172a', /* Koyu Lacivert/Gri - Endüstriyel */
-                            blue: '#3b82f6', /* Güven */
-                            green: '#25D366', /* WhatsApp Yeşili - Aksiyon */
+                            dark: '#0f172a', /* Koyu Lacivert */
+                            blue: '#3b82f6', /* Güven Mavisi */
+                            green: '#25D366', /* WhatsApp Yeşili */
                         }
                     }
                 }
             }
         }
     </script>
-    <style>
-        /* Mobil menü animasyonu */
-        #mobile-menu { transition: max-height 0.3s ease-in-out; }
-    </style>
 </head>
 <body class="bg-white text-slate-800 antialiased">
 
     <nav class="fixed w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
-                <div class="flex-shrink-0 flex items-center gap-2">
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-2">
                     <div class="w-10 h-10 bg-izka-dark text-white flex items-center justify-center rounded-lg">
                         <i class="fa-solid fa-shapes text-xl"></i>
                     </div>
                     <span class="font-bold text-2xl tracking-tight text-slate-900">İZKA<span class="text-izka-blue">KALIP</span></span>
-                </div>
+                </a>
                 
                 <div class="hidden md:flex space-x-8 items-center">
-                    <a href="#home" class="text-slate-600 hover:text-izka-blue font-medium transition">Ana Sayfa</a>
-                    <a href="#about" class="text-slate-600 hover:text-izka-blue font-medium transition">Kurumsal</a>
-                    <a href="#services" class="text-slate-600 hover:text-izka-blue font-medium transition">Hizmetler</a>
+                    <a href="index.html" class="text-izka-blue font-bold transition">Ana Sayfa</a>
+                    <a href="kurumsal.html" class="text-slate-600 hover:text-izka-blue font-medium transition">Kurumsal</a>
+                    <a href="hizmetler.html" class="text-slate-600 hover:text-izka-blue font-medium transition">Hizmetler</a>
                     <a href="#gallery" class="text-slate-600 hover:text-izka-blue font-medium transition">Üretim</a>
                     <a href="#contact" class="bg-izka-dark text-white px-5 py-2.5 rounded-full font-medium hover:bg-slate-800 transition shadow-lg shadow-slate-900/20">
                         Teklif İste
@@ -62,12 +58,13 @@
             </div>
         </div>
 
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full">
-            <div class="px-4 pt-2 pb-6 space-y-2 shadow-xl">
-                <a href="#home" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:bg-gray-50 hover:text-izka-blue">Ana Sayfa</a>
-                <a href="#services" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:bg-gray-50 hover:text-izka-blue">Hizmetler</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="index.html" class="block px-3 py-3 rounded-md text-base font-bold text-izka-blue bg-blue-50">Ana Sayfa</a>
+                <a href="kurumsal.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:bg-gray-50 hover:text-izka-blue">Kurumsal</a>
+                <a href="hizmetler.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:bg-gray-50 hover:text-izka-blue">Hizmetler</a>
                 <a href="#gallery" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:bg-gray-50 hover:text-izka-blue">Galeri</a>
-                <a href="#contact" class="block px-3 py-3 mt-4 text-center rounded-lg bg-izka-green text-white font-bold">WhatsApp'tan Yazın</a>
+                <a href="https://wa.me/905555555555" class="block px-3 py-3 mt-4 text-center rounded-lg bg-izka-green text-white font-bold">WhatsApp'tan Yazın</a>
             </div>
         </div>
     </nav>
@@ -75,7 +72,8 @@
     <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
         <div class="absolute inset-0 z-0">
             <img src="https://images.unsplash.com/photo-1565439396655-e46d03405611?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="CNC Fabrika" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-slate-900/80"></div> </div>
+            <div class="absolute inset-0 bg-slate-900/80"></div>
+        </div>
 
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
             <div class="sm:max-w-2xl">
@@ -90,7 +88,7 @@
                     <a href="#contact" class="flex items-center justify-center gap-2 bg-izka-green hover:bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition shadow-lg shadow-green-500/30">
                         <i class="fa-brands fa-whatsapp text-xl"></i> Hızlı İletişim
                     </a>
-                    <a href="#services" class="flex items-center justify-center bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white border border-white/30 px-8 py-4 rounded-full text-lg font-medium transition">
+                    <a href="hizmetler.html" class="flex items-center justify-center bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white border border-white/30 px-8 py-4 rounded-full text-lg font-medium transition">
                         Neler Yapıyoruz?
                     </a>
                 </div>
@@ -136,12 +134,10 @@
                             <i class="fa-solid fa-check-circle text-izka-green text-xl"></i> Hassas CNC İşleme
                         </li>
                         <li class="flex items-center gap-3 text-slate-700">
-                            <i class="fa-solid fa-check-circle text-izka-green text-xl"></i> Kaliteli Hammadde Kullanımı
-                        </li>
-                        <li class="flex items-center gap-3 text-slate-700">
-                            <i class="fa-solid fa-check-circle text-izka-green text-xl"></i> Zamanında Teslimat
+                            <i class="fa-solid fa-check-circle text-izka-green text-xl"></i> Kaliteli Hammadde
                         </li>
                     </ul>
+                    <a href="kurumsal.html" class="text-izka-blue font-bold hover:underline">Hakkımızda Daha Fazla <i class="fa-solid fa-arrow-right ml-1"></i></a>
                 </div>
             </div>
         </div>
@@ -151,33 +147,37 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="text-3xl font-bold text-slate-900 mb-4">Hizmetlerimiz</h2>
-                <p class="text-slate-600">Sektörün ihtiyaçlarına yönelik, teknolojik ve sürdürülebilir üretim çözümleri sunuyoruz.</p>
+                <p class="text-slate-600">Sektörün ihtiyaçlarına yönelik, teknolojik ve sürdürülebilir üretim çözümleri.</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 group">
+                <a href="hizmetler.html" class="block bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 group">
                     <div class="w-14 h-14 bg-blue-50 text-izka-blue rounded-xl flex items-center justify-center mb-6 group-hover:bg-izka-blue group-hover:text-white transition">
                         <i class="fa-solid fa-microchip text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">CNC İşleme</h3>
                     <p class="text-slate-600">Karmaşık parçaların yüksek hassasiyetle işlenmesi ve prototipleme süreçleri.</p>
-                </div>
+                </a>
 
-                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 group">
+                <a href="hizmetler.html" class="block bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 group">
                     <div class="w-14 h-14 bg-blue-50 text-izka-blue rounded-xl flex items-center justify-center mb-6 group-hover:bg-izka-blue group-hover:text-white transition">
                         <i class="fa-solid fa-industry text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Plastik Enjeksiyon</h3>
                     <p class="text-slate-600">Seri üretim ihtiyaçlarınız için modern enjeksiyon baskı çözümleri.</p>
-                </div>
+                </a>
 
-                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 group">
+                <a href="hizmetler.html" class="block bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 group">
                     <div class="w-14 h-14 bg-blue-50 text-izka-blue rounded-xl flex items-center justify-center mb-6 group-hover:bg-izka-blue group-hover:text-white transition">
                         <i class="fa-solid fa-pencil-ruler text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Kalıp Tasarım</h3>
                     <p class="text-slate-600">CAD/CAM destekli, üretime uygun optimize edilmiş kalıp tasarımları.</p>
-                </div>
+                </a>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="hizmetler.html" class="inline-block border border-izka-blue text-izka-blue px-8 py-3 rounded-full font-bold hover:bg-izka-blue hover:text-white transition">Tüm Hizmetleri İncele</a>
             </div>
         </div>
     </section>
@@ -199,7 +199,7 @@
                     <img src="https://images.unsplash.com/photo-1537462713205-e512641bfb18?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="object-cover w-full h-full hover:scale-110 transition duration-500">
                 </div>
             </div>
-            <p class="text-center text-sm text-slate-400 mt-4">*Görseller temsilidir, kendi fotoğraflarınızı buraya ekleyebilirsiniz.</p>
+            <p class="text-center text-sm text-slate-400 mt-4">*Görseller temsilidir.</p>
         </div>
     </section>
 
@@ -209,7 +209,7 @@
                 <div class="col-span-1 md:col-span-2">
                     <h3 class="text-2xl font-bold mb-6">İZKA<span class="text-izka-blue">KALIP</span></h3>
                     <p class="text-slate-400 mb-6 max-w-sm">
-                        Sanayi ve üretim ihtiyaçlarınıza modern çözümler sunan çözüm ortağınız. Kalite ve güven önceliğimizdir.
+                        Sanayi ve üretim ihtiyaçlarınıza modern çözümler sunan çözüm ortağınız.
                     </p>
                     <div class="flex space-x-4">
                         <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-izka-blue transition"><i class="fa-brands fa-instagram"></i></a>
@@ -220,9 +220,9 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-6">Hızlı Erişim</h4>
                     <ul class="space-y-3 text-slate-400">
-                        <li><a href="#home" class="hover:text-white transition">Ana Sayfa</a></li>
-                        <li><a href="#services" class="hover:text-white transition">Hizmetlerimiz</a></li>
-                        <li><a href="#about" class="hover:text-white transition">Hakkımızda</a></li>
+                        <li><a href="index.html" class="hover:text-white transition">Ana Sayfa</a></li>
+                        <li><a href="hizmetler.html" class="hover:text-white transition">Hizmetlerimiz</a></li>
+                        <li><a href="kurumsal.html" class="hover:text-white transition">Hakkımızda</a></li>
                         <li><a href="#contact" class="hover:text-white transition">İletişim</a></li>
                     </ul>
                 </div>
@@ -263,8 +263,8 @@
         btn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
         });
-
-        // Linklere tıklayınca menüyü kapat
+        
+        // Menü linklerine tıklayınca menüyü kapat (Mobil için opsiyonel)
         menu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 menu.classList.add('hidden');
