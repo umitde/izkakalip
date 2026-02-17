@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Üretim & Makine Parkuru | İZKA KALIP</title>
+    <meta name="description" content="İzka Kalıp üretim tesisi, makine parkuru ve tamamlanan projelerden görseller.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        izka: {
+                            dark: '#0f172a', 
+                            blue: '#3b82f6', 
+                            green: '#25D366', 
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-2">
+                    <div class="w-10 h-10 bg-izka-dark text-white flex items-center justify-center rounded-lg">
+                        <i class="fa-solid fa-shapes text-xl"></i>
+                    </div>
+                    <span class="font-bold text-2xl tracking-tight text-slate-900">İZKA<span class="text-izka-blue">KALIP</span></span>
+                </a>
+                
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-slate-600 hover:text-izka-blue font-medium transition">Ana Sayfa</a>
+                    <a href="kurumsal.html" class="text-slate-600 hover:text-izka-blue font-medium transition">Kurumsal</a>
+                    <a href="hizmetler.html" class="text-slate-600 hover:text-izka-blue font-medium transition">Hizmetler</a>
+                    <a href="uretim.html" class="text-izka-blue font-bold transition">Üretim</a> <a href="index.html#contact" class="bg-izka-dark text-white px-5 py-2.5 rounded-full font-medium hover:bg-slate-800 transition shadow-lg shadow-slate-900/20">
+                        Teklif İste
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-slate-900 focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="index.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:bg-gray-50">Ana Sayfa</a>
+                <a href="kurumsal.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:bg-gray-50">Kurumsal</a>
+                <a href="hizmetler.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:bg-gray-50">Hizmetler</a>
+                <a href="uretim.html" class="block px-3 py-3 rounded-md text-base font-bold text-izka-blue bg-blue-50">Üretim</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-slate-900 pt-32 pb-16 lg:pt-40 lg:pb-24 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1565514020176-80f494924eb8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" class="w-full h-full object-cover">
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">Üretim & Teknoloji</h1>
+            <p class="text-slate-400 text-lg">Makine Parkurumuz ve Üretim Sahamız</p>
+        </div>
+    </header>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">Makine Parkurumuz</h2>
+                <p class="text-slate-600 mt-4">Kapasitemizi ve teknolojimizi oluşturan güç.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 rounded-xl p-8 border border-gray-200">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-izka-blue text-white rounded-lg flex items-center justify-center"><i class="fa-solid fa-microchip"></i></div>
+                        <h3 class="text-xl font-bold text-slate-900">CNC Bölümü</h3>
+                    </div>
+                    <ul class="space-y-3 text-slate-700">
+                        <li class="flex justify-between border-b border-gray-200 pb-2"><span>CNC Dik İşleme (3 Eksen)</span> <span class="font-bold text-izka-blue">2 Adet</span></li>
+                        <li class="flex justify-between border-b border-gray-200 pb-2"><span>CNC Torna</span> <span class="font-bold text-izka-blue">1 Adet</span></li>
+                        <li class="flex justify-between border-b border-gray-200 pb-2"><span>Dalma Erezyon</span> <span class="font-bold text-izka-blue">2 Adet</span></li>
+                        <li class="flex justify-between pt-2"><span>Tel Erezyon</span> <span class="font-bold text-izka-blue">1 Adet</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-50 rounded-xl p-8 border border-gray-200">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-izka-blue text-white rounded-lg flex items-center justify-center"><i class="fa-solid fa-industry"></i></div>
+                        <h3 class="text-xl font-bold text-slate-900">Enjeksiyon Hattı</h3>
+                    </div>
+                    <ul class="space-y-3 text-slate-700">
+                        <li class="flex justify-between border-b border-gray-200 pb-2"><span>150 Ton Enjeksiyon</span> <span class="font-bold text-izka-blue">1 Adet</span></li>
+                        <li class="flex justify-between border-b border-gray-200 pb-2"><span>200 Ton Enjeksiyon</span> <span class="font-bold text-izka-blue">1 Adet</span></li>
+                        <li class="flex justify-between border-b border-gray-200 pb-2"><span>300 Ton Enjeksiyon</span> <span class="font-bold text-izka-blue">1 Adet</span></li>
+                        <li class="flex justify-between pt-2"><span>Kurutma & Yükleme</span> <span class="font-bold text-izka-blue">Tam Set</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-50 rounded-xl p-8 border border-gray-200">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-izka-blue text-white rounded-lg flex items-center justify-center"><i class="fa-solid fa-ruler-combined"></i></div>
+                        <h3 class="text-xl font-bold text-slate-900">Kalite & Destek</h3>
+                    </div>
+                    <ul class="space-y-3 text-slate-700">
+                        <li class="flex justify-between border-b border-gray-200 pb-2"><span>CMM Ölçüm Cihazı</span> <span class="font-bold text-izka-blue">Var</span></li>
+                        <li class="flex justify-between border-b border-gray-200 pb-2"><span>Kalıpçı Freze</span> <span class="font-bold text-izka-blue">2 Adet</span></li>
+                        <li class="flex justify-between border-b border-gray-200 pb-2"><span>Yüzey Taşlama</span> <span class="font-bold text-izka-blue">1 Adet</span></li>
+                        <li class="flex justify-between pt-2"><span>CAD/CAM İstasyonu</span> <span class="font-bold text-izka-blue">2 Lisans</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-izka-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Saha Görselleri</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="col-span-2 row-span-2 overflow-hidden rounded-xl border border-slate-700">
+                    <img src="https://images.unsplash.com/photo-1563914466642-120092c72b83?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" class="w-full h-full object-cover hover:scale-110 transition duration-700" alt="CNC İşleme">
+                </div>
+                <div class="overflow-hidden rounded-xl border border-slate-700">
+                    <img src="https://images.unsplash.com/photo-1590429993309-826065586b3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover hover:scale-110 transition duration-700" alt="Kalıp Detay">
+                </div>
+                <div class="overflow-hidden rounded-xl border border-slate-700">
+                    <img src="https://images.unsplash.com/photo-1622473590773-f58813c56f6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover hover:scale-110 transition duration-700" alt="Enjeksiyon">
+                </div>
+                <div class="overflow-hidden rounded-xl border border-slate-700">
+                    <img src="https://images.unsplash.com/photo-1617781530614-2c40212759e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover hover:scale-110 transition duration-700" alt="Ürünler">
+                </div>
+                <div class="overflow-hidden rounded-xl border border-slate-700">
+                    <img src="https://images.unsplash.com/photo-1565439396655-e46d03405611?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover hover:scale-110 transition duration-700" alt="Fabrika Genel">
+                </div>
+                <div class="overflow-hidden rounded-xl border border-slate-700">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover hover:scale-110 transition duration-700" alt="Mühendislik">
+                </div>
+            </div>
+            <p class="text-center text-slate-400 mt-6 text-sm">*Temsili görsellerdir, fabrika içi fotoğraflarınızla değiştirilebilir.</p>
+        </div>
+    </section>
+
+    <section class="py-20 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl font-bold text-slate-900 mb-8">Üretim Hattımızı İzleyin</h2>
+            <div class="aspect-video bg-gray-200 rounded-2xl overflow-hidden shadow-xl relative group cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1531297461136-82lw9z0u7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition">
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-20 h-20 bg-izka-blue/90 rounded-full flex items-center justify-center text-white text-3xl pl-1 shadow-lg group-hover:scale-110 transition">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                <div class="absolute bottom-4 left-4 text-white text-left">
+                    <p class="font-bold">Tanıtım Filmi</p>
+                    <p class="text-xs">1:45 dk</p>
+                </div>
+            </div>
+            <p class="mt-4 text-slate-500 text-sm">Yakında yüklenecek...</p>
+        </div>
+    </section>
+
+    <footer class="bg-izka-dark text-white pt-20 pb-10 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-2xl font-bold mb-6">İZKA<span class="text-izka-blue">KALIP</span></h3>
+                    <p class="text-slate-400 mb-6 max-w-sm">
+                        Sanayi ve üretim ihtiyaçlarınıza modern çözümler sunan çözüm ortağınız.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-izka-blue transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-izka-blue transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Hızlı Erişim</h4>
+                    <ul class="space-y-3 text-slate-400">
+                        <li><a href="index.html" class="hover:text-white transition">Ana Sayfa</a></li>
+                        <li><a href="hizmetler.html" class="hover:text-white transition">Hizmetlerimiz</a></li>
+                        <li><a href="kurumsal.html" class="hover:text-white transition">Hakkımızda</a></li>
+                        <li><a href="index.html#contact" class="hover:text-white transition">İletişim</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">İletişim</h4>
+                    <ul class="space-y-4 text-slate-400">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1 text-izka-blue"></i>
+                            <span>İkitelli OSB, Metal İş Sanayi Sitesi, İstanbul</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-izka-blue"></i>
+                            <a href="tel:+905555555555" class="hover:text-white transition">+90 555 555 55 55</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-izka-blue"></i>
+                            <a href="mailto:info@izkakalip.com" class="hover:text-white transition">info@izkakalip.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 text-center text-slate-500 text-sm">
+                <p>&copy; 2024 İzka Kalıp. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/905555555555" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:bg-green-600 transition hover:-translate-y-1">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
