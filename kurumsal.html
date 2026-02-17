@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurumsal | İZKA KALIP - Hakkımızda</title>
+    <meta name="description" content="İzka Kalıp kurumsal sayfası. Misyonumuz, vizyonumuz ve endüstriyel üretimdeki kalite politikamız.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        izka: {
+                            dark: '#0f172a', 
+                            blue: '#3b82f6', 
+                            green: '#25D366', 
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-2">
+                    <div class="w-10 h-10 bg-izka-dark text-white flex items-center justify-center rounded-lg">
+                        <i class="fa-solid fa-shapes text-xl"></i>
+                    </div>
+                    <span class="font-bold text-2xl tracking-tight text-slate-900">İZKA<span class="text-izka-blue">KALIP</span></span>
+                </a>
+                
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-slate-600 hover:text-izka-blue font-medium transition">Ana Sayfa</a>
+                    <a href="kurumsal.html" class="text-izka-blue font-bold transition">Kurumsal</a> <a href="index.html#services" class="text-slate-600 hover:text-izka-blue font-medium transition">Hizmetler</a>
+                    <a href="index.html#gallery" class="text-slate-600 hover:text-izka-blue font-medium transition">Üretim</a>
+                    <a href="index.html#contact" class="bg-izka-dark text-white px-5 py-2.5 rounded-full font-medium hover:bg-slate-800 transition shadow-lg shadow-slate-900/20">
+                        Teklif İste
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-slate-900 focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="index.html" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:bg-gray-50">Ana Sayfa</a>
+                <a href="kurumsal.html" class="block px-3 py-3 rounded-md text-base font-bold text-izka-blue bg-blue-50">Kurumsal</a>
+                <a href="index.html#services" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:bg-gray-50">Hizmetler</a>
+                <a href="index.html#gallery" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:bg-gray-50">Galeri</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-slate-900 pt-32 pb-16 lg:pt-40 lg:pb-24 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+             <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" class="w-full h-full object-cover">
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">Hakkımızda</h1>
+            <p class="text-slate-400 text-lg">Tecrübe, Teknoloji ve Güvenin Buluşma Noktası</p>
+        </div>
+    </header>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                
+                <div>
+                    <h2 class="text-izka-blue font-bold text-sm tracking-widest uppercase mb-2">FİRMAMIZ</h2>
+                    <h3 class="text-3xl font-bold text-slate-900 mb-6">Endüstriyel Çözüm Ortağınız</h3>
+                    <div class="space-y-4 text-slate-600 leading-relaxed">
+                        <p>
+                            İzka Kalıp olarak, kurulduğumuz günden bu yana plastik enjeksiyon kalıpçılığı ve CNC işleme sektöründe kaliteyi ve müşteri memnuniyetini esas alan bir anlayışla hizmet vermekteyiz.
+                        </p>
+                        <p>
+                            Modern makine parkurumuz ve alanında uzman mühendis kadromuzla, tasarım aşamasından nihai ürün teslimatına kadar tüm süreçleri kendi bünyemizde yönetiyoruz. Sadece bir tedarikçi değil, projelerinizde size değer katan bir çözüm ortağı olmayı hedefliyoruz.
+                        </p>
+                        <p>
+                            Otomotiv, beyaz eşya, elektrik-elektronik ve medikal gibi farklı sektörlerin hassas üretim ihtiyaçlarına, uluslararası standartlarda cevap veriyoruz.
+                        </p>
+                    </div>
+
+                    <div class="mt-8 border-l-4 border-izka-blue pl-6 italic text-slate-700">
+                        "İşimizi severek yapıyoruz, çünkü detayların mükemmelliği yarattığına inanıyoruz."
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1635350736475-c8cef4b21906?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="rounded-2xl shadow-lg w-full h-64 object-cover transform translate-y-8">
+                    <img src="https://images.unsplash.com/photo-1565043666747-69f6646db940?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="rounded-2xl shadow-lg w-full h-64 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 text-izka-blue rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-bullseye text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Misyonumuz</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Müşterilerimizin üretim süreçlerini hızlandıran, maliyetlerini düşüren ve kalitelerini artıran yenilikçi kalıp ve imalat çözümleri sunmak.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 text-izka-blue rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-eye text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Vizyonumuz</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Teknolojiyi yakından takip ederek, Türkiye'de ve dünyada kalıpçılık sektöründe referans gösterilen lider bir marka olmak.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 text-izka-blue rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-medal text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Kalite Politikamız</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Sıfır hata prensibiyle çalışmak, sürekli iyileştirme yapmak ve zamanında teslimat ile müşteri güvenini en üst düzeyde tutmak.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-slate-900 mb-12">Neden İzka Kalıp?</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center text-izka-blue text-2xl mb-4">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <h5 class="font-bold text-slate-900">Zamanında Teslimat</h5>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center text-izka-blue text-2xl mb-4">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <h5 class="font-bold text-slate-900">Yüksek Teknoloji</h5>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center text-izka-blue text-2xl mb-4">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h5 class="font-bold text-slate-900">Teknik Destek</h5>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center text-izka-blue text-2xl mb-4">
+                        <i class="fa-solid fa-tags"></i>
+                    </div>
+                    <h5 class="font-bold text-slate-900">Rekabetçi Fiyat</h5>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-izka-blue text-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Projenizi Hayata Geçirmeye Hazır Mısınız?</h2>
+            <p class="text-blue-100 mb-8 max-w-2xl mx-auto">Profesyonel ekibimizle tanışın, üretim süreçlerinizde fark yaratın.</p>
+            <a href="index.html#contact" class="inline-block bg-white text-izka-blue px-8 py-3 rounded-full font-bold hover:bg-slate-100 transition shadow-lg">
+                Bize Ulaşın
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-izka-dark text-white pt-20 pb-10 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-2xl font-bold mb-6">İZKA<span class="text-izka-blue">KALIP</span></h3>
+                    <p class="text-slate-400 mb-6 max-w-sm">
+                        Sanayi ve üretim ihtiyaçlarınıza modern çözümler sunan çözüm ortağınız. Kalite ve güven önceliğimizdir.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-izka-blue transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-izka-blue transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Hızlı Erişim</h4>
+                    <ul class="space-y-3 text-slate-400">
+                        <li><a href="index.html" class="hover:text-white transition">Ana Sayfa</a></li>
+                        <li><a href="index.html#services" class="hover:text-white transition">Hizmetlerimiz</a></li>
+                        <li><a href="kurumsal.html" class="hover:text-white transition">Hakkımızda</a></li>
+                        <li><a href="index.html#contact" class="hover:text-white transition">İletişim</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">İletişim</h4>
+                    <ul class="space-y-4 text-slate-400">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1 text-izka-blue"></i>
+                            <span>İkitelli OSB, Metal İş Sanayi Sitesi, İstanbul</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-izka-blue"></i>
+                            <a href="tel:+905555555555" class="hover:text-white transition">+90 555 555 55 55</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-izka-blue"></i>
+                            <a href="mailto:info@izkakalip.com" class="hover:text-white transition">info@izkakalip.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 pt-8 text-center text-slate-500 text-sm">
+                <p>&copy; 2024 İzka Kalıp. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/905555555555" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:bg-green-600 transition hover:-translate-y-1">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
